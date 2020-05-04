@@ -1,0 +1,99 @@
+* {
+				padding: 0;
+				margin: 0;
+			}
+
+			body {
+				min-width: 800px;
+				background: url(../img/1.jpg);
+				background-size: 100%;
+				margin: 0 auto;
+
+			}
+
+			.bigbox {
+				/*这个是控制其缩放后居中的*/
+				max-width: 1200px;
+				min-width: 300px;
+				height: 100%;
+				margin: 0 auto;
+			}
+
+			.begin {
+				width: 850px;
+				height: 480px;
+				background: greenyellow;
+				position: absolute;
+				left: 27%;
+				top: 26%;
+				border-radius: 20px;
+			}
+
+			.secret {
+				width: 300px;
+				height: 500px;
+				border-radius: 20px;
+				background: #FFFFFF;
+				padding: 6%;
+				position: relative;
+				left: 52%;
+				top: -18%;
+			}
+
+			h1 {
+				color: #ADFF2F;
+				margin-bottom: 20px;
+			}
+
+			input {
+				width: 300px;
+				height: 60px;
+				border: 2px grey;
+				background: gainsboro;
+				border-radius: 5px;
+				margin: 10px 0;
+				padding-left: 10px;
+				font-size: 20px;
+
+			}
+
+			button {
+				width: 147.5px;
+				height: 60px;
+				font-size: 20px;
+				font-weight: bold;
+				background: gainsboro;
+				border: none;
+				border-radius: 5px;
+				cursor: pointer;
+			}
+
+			button:hover {
+				background: #ADFF2F;
+				color: #FFFFFF;
+			}
+
+			img {
+				height: 50px;
+				width: auto;
+				cursor: pointer;
+			}
+
+			.word1 {
+				position: relative;
+				top: 20%;
+				left: 6%;
+				color: aliceblue;
+				font-size: 40px;
+				font-weight: bold;
+				font-family: 'Hanalei Fill', cursive;
+			}
+
+			.word2 {
+				position: relative;
+				text-align: center;
+				font-size: 20px;
+				font-weight: bold;
+				font-family: 'Hanalei Fill', cursive;
+				margin-top: 110px;
+			}
