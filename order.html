@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>餐厅后台管理系统</title>
+		<link href="https://fonts.font.im/css?family=Hanalei+Fill" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/index1.css" />
+		<script type="text/javascript" src="js/order.js"></script>
+		<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+	</head>
+	<body>
+
+		<div class="right">
+			<div class="top-right">餐厅后台管理系统</div>
+			<div class="div1" data-toggle="collapse" data-target="#demo2"><a href="order.html" ><i class="fa fa-fire"></i>订单管理</a><i class="fa fa-caret-down"></i></div>
+			 <div id="demo2" class="collapse">
+				<li onclick="orderpage() ">当前所有订单</li>
+			</div>
+            
+			<div class="div1" data-toggle="collapse" data-target="#demo1"> <a href="food.html"><i class="fa fa-coffee"></i>菜单管理
+				</a><i class="fa fa-caret-down"></i></div>
+			<div id="demo1" class="collapse">
+				<li>显示当前所有菜单</li>
+			</div> 
+
+			<div class="div1" data-toggle="collapse" data-target="#demo"><a href="user.html"><i class="fa fa-user-o "></i>用户管理</a><i class="fa fa-caret-down"></i></div>
+			<div id="demo" class="collapse">
+				<li onclick="userlook()">查看用户信息</li>
+			</div>
+		</div>
+
+
+		<div class="left">
+			<div class="top-left">
+				<i class="fa fa-tasks"></i>
+				<i class="fa fa-globe"></i>
+				<i class="fa fa-arrows-alt"></i>
+				<i class="fa fa-repeat"></i>
+				<i class="fa fa-tags"></i>
+				<div class="shortbox">
+					<i class="fa fa-user-circle"></i>
+					<i class="return fa fa-sign-out" ></i>
+				</div>
+			</div>
+
+
+
+			<div class="box">
+				<button type="button" class="add btn btn-primary" data-toggle="modal" data-target="#exampleModal">添加</button>
+				<table class="table table-hover table-bordered">
+					<tbody id="orderData">
+						<tr style="background: #D3D3D3;">
+							<th>选购菜品</th>
+							<th>付款</th>
+							<th>手机号码</th>
+							<th>操作</th>
+						</tr>
+					</tbody>
+					<div class="getpage"></div>
+				</table>
+			</div>
+			<!-- order -->
+			<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+			 aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLabel">修改订单</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<form>
+								<div class="form-group">
+									<label for="formGroupExampleInput">选购菜品</label>
+									<input type="text" class="form-control" id="ordername">
+								</div>
+								<div class="form-group">
+									<label for="formGroupExampleInput2">付款</label>
+									<input type="text" class="form-control" id="receivables">
+								</div>
+								<div class="form-group">
+									<label for="formGroupExampleInput3">手机号码</label>
+									<input type="text" class="form-control" id="drawee">
+								</div>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+							<button type="button" class="orderadd btn btn-primary" >提交</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="Modal"
+			 aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="Modal">修改订单</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<form>
+								<div class="form-group">
+									<label for="formGroupExampleInput">选购菜品</label>
+									<input type="text" class="form-control" id="ordername1">
+								</div>
+								<div class="form-group">
+									<label for="formGroupExampleInput2">付款</label>
+									<input type="text" class="form-control" id="receivables1">
+								</div>
+								<div class="form-group">
+									<label for="formGroupExampleInput3">手机号码</label>
+									<input type="text" class="form-control" id="drawee1">
+								</div>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+							<button type="button" class="orderchange btn btn-primary" >提交</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+
+	</body>
+</html>
